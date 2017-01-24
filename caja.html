@@ -16,19 +16,6 @@
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.js"></script>
 
-    <script src="https://www.amcharts.com/lib/3/amcharts.js"></script>
-    <script src="https://www.amcharts.com/lib/3/pie.js"></script>
-    <script src="https://www.amcharts.com/lib/3/themes/light.js"></script>
-    <script src="https://www.amcharts.com/lib/3/plugins/export/export.min.js"></script>
-    <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
-    <script type="text/javascript" src="js/dona.js"></script>
-    <style>
-      #chartdiv {
-        width   : 100%;
-        height    : 500px;
-        font-size : 11px;
-      }             
-    </style>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -71,7 +58,11 @@
         </div><!-- /.container-fluid -->
       </nav>
       <form>
-        <p class="bg-info" style="padding:.8em; text-align:center;">REPORTES</p>
+        <p class="bg-danger" style="padding:.8em; text-align:center;">CAJA</p>
+        <div class="form-group">
+          <label for="exampleInputEmail1">Total</label>
+          <input type="text" class="form-control" placeholder="$45,000.00 MXN" disabled="true">
+        </div>
         <div class="form-group">
         <label for="exampleInputPassword1">Servicio</label>
           <select class="form-control">
@@ -89,25 +80,24 @@
           </select>
         </div>
         <div class="form-group">
-          <label for="exampleInputEmail1">Rango de fechas</label>
-             <div class='input-group date' id='datetimepicker1'>
-                <input type='text' class="form-control" placeholder="Del"/>
-                <span class="input-group-addon">
-                  <span class="glyphicon glyphicon-calendar"></span>
-                </span>
-                 <input type='text' class="form-control" placeholder="Hasta"/>
-                <span class="input-group-addon">
-                  <span class="glyphicon glyphicon-calendar"></span>
-                </span>             
-             </div>
+          <label for="exampleInputEmail1">Total</label>
+          <input type="text" class="form-control" placeholder="$13,000.00 MXN" disabled="true">
         </div>
         <div class="form-group">
-          <button type="button" class="btn btn-danger" aria-haspopup="true" aria-expanded="false">Cancelar</button>
-          <button type="submit" class="btn btn-info">Consultar</button>
-        </div> 
-        <div id="chartdiv"></div>
-        <button type="submit" class="btn btn-success" style="float: right">Generar reporte PDF</button>
+        <label for="exampleInputPassword1">Concepto de egreso</label>
+          <select class="form-control">
+            <option>Mantenimiento</option>
+            <option>Compra de equipo</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Cantidad</label>
+          <input type="text" class="form-control" placeholder="">
+        </div>
+        <button type="button" class="btn btn-danger" aria-haspopup="true" aria-expanded="false">Cancelar</button>
+        <button type="submit" class="btn btn-success">Aplicar</button>
       </form>
+      
   </div>
   </div>
   </body>

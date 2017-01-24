@@ -70,7 +70,7 @@
               <div class="btn-group">
                 <button type="button" class="btn btn-primary" aria-haspopup="true" aria-expanded="false" onClick="location.href='bancos.html'">
                 <span class="glyphicon glyphicon-hourglass" aria-hidden="true"></span> Bancos</button>
-              </div>
+              </div>              
               <div class="btn-group">
                 <button type="button" class="btn btn-info" aria-haspopup="true" aria-expanded="false">
                 <span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Catálogos <span class="caret"></span></button>
@@ -88,115 +88,44 @@
         </div><!-- /.container-fluid -->
       </nav>
       <form>
-        <p class="bg-info" style="padding:.8em; text-align:center;">CONSULTA SERVICIOS POR RECIBO</p>
+        <p class="bg-info" style="padding:.8em; text-align:center;">REGISTRO DE SERVICIO</p>
         <div class="form-group">
-          <label for="exampleInputEmail1">Número de recibo</label>
-          <input type="number" class="form-control" placeholder="Número de recibo">
+          <label for="exampleInputEmail1">Nombre del servicio</label>
+          <input type="text" class="form-control" placeholder="Nombre de servicio">
         </div>
         <div class="form-group">
-          <label for="exampleInputEmail1">Rango de fechas</label>
-             <div class='input-group date' id='datetimepicker1'>
-                <input type='text' class="form-control" placeholder="Del"/>
-                <span class="input-group-addon">
-                  <span class="glyphicon glyphicon-calendar"></span>
-                </span>
-                 <input type='text' class="form-control" placeholder="Hasta"/>
-                <span class="input-group-addon">
-                  <span class="glyphicon glyphicon-calendar"></span>
-                </span>             
-             </div>
+          <label for="exampleInputPassword1">Costo</label>
+          <input type="number" class="form-control" placeholder="Costo de serivico">
         </div>
         <div class="form-group">
-          <button type="button" class="btn btn-danger" aria-haspopup="true" aria-expanded="false">Cancelar</button>
-          <button type="submit" class="btn btn-info">Consultar</button>
-        </div>  
-        <div class="form-group">
-          <label for="exampleInputEmail1">Recibo número:</label>
-          <input type="text" class="form-control" placeholder="9863149816" disabled="true">
+        <label for="exampleInputPassword1">Servicio</label>
+          <select class="form-control">
+            <option>SG</option>
+          </select>
         </div>
         <div class="form-group">
-          <label for="exampleInputEmail1">Emisor:</label>
-          <input type="text" class="form-control" placeholder="Hospital General" disabled="true">
+        <label for="exampleInputPassword1">Sub-Servicio</label>
+          <select class="form-control">
+            <option>Patología</option>
+            <option>Láser</option>
+            <option>Avastín</option>
+            <option>Biopsias</option>
+            <option>Broncoscopia</option>
+          </select>
         </div>
         <div class="form-group">
-          <label for="exampleInputEmail1">Cantidad:</label>
-          <input type="text" class="form-control" placeholder="$45,000.00" disabled="true">
+          <label for="exampleInputPassword1">Institución</label>
+          <input type="text" class="form-control" placeholder="Institución">
         </div>
         <div class="form-group">
-          <label for="exampleInputEmail1">Total por servicios</label>
-          <input type="text" class="form-control" placeholder="$40,000.00" disabled="true">
-        </div> 
-        <div class="form-group">
-         <label for="exampleInputPassword1">SERVICIOS</label>
-          <table class="table table-hover" style="text-align: center">
-            <thead>
-              <tr class="warning">
-                <td>SERVICIO</td>
-                <td>SUBSERVICIO</td>
-                <td>INSTITUCIÓN</td>
-                <td>COSTO</td>
-                <td>CANCELAR SERVICIO</td>
-              </tr>
-             </thead>
-             <tbody>
-              <tr>
-                <td>SG</td>
-                <td>Láser</td>
-                <td>Hospital General</td>
-                <td>$3,200.00</td>
-                <td><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></td>
-              </tr>
-              <tr>
-                <td>SG</td>
-                <td>Láser</td>
-                <td>Hospital General</td>
-                <td>$3,200.00</td>
-                <td><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></td>
-              </tr>
-              <tr>
-                <td>SG</td>
-                <td>Láser</td>
-                <td>Hospital General</td>
-                <td>$3,200.00</td>
-                <td><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></td>
-              </tr>
-              <tr>
-                <td>SG</td>
-                <td>Láser</td>
-                <td>Hospital General</td>
-                <td>$3,200.00</td>
-                <td><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></td>
-              </tr>
-              <tr>
-                <td>SG</td>
-                <td>Láser</td>
-                <td>Hospital General</td>
-                <td>$3,200.00</td>
-                <td><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></td>
-              </tr>                            
-            </tbody> 
-          </table>
-            <nav aria-label="..." style="text-align: center;">
-              <ul class="pagination pagination-sm">
-                 <li>
-                    <a href="#" aria-label="Previous">
-                      <span aria-hidden="true">&laquo;</span>
-                    </a>
-                  </li>
-                  <li><a href="#">1</a></li>
-                  <li><a href="#">2</a></li>
-                  <li><a href="#">3</a></li>
-                  <li><a href="#">4</a></li>
-                  <li><a href="#">5</a></li>
-                   <li>
-                      <a href="#" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                      </a>
-                    </li>
-              </ul>
-            </nav>
+        <label for="exampleInputPassword1">Status</label>
+          <select class="form-control">
+            <option>Pagado</option>
+            <option>Pendiente</option>
+          </select>
         </div>
-        <button type="submit" class="btn btn-success" style="float: right">Guardar</button>
+        <button type="button" class="btn btn-danger" aria-haspopup="true" aria-expanded="false">Cancelar</button>
+        <button type="submit" class="btn btn-success">Guardar</button>
       </form>
       
   </div>
